@@ -2,6 +2,8 @@
 
 Get the MD5-sum of a given file, with low memory usage, even on huge files.
 
+Open file with [graceful-fs](https://github.com/isaacs/node-graceful-fs)
+
 ## Installation
 
 ```sh

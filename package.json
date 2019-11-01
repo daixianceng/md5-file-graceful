@@ -7,8 +7,8 @@
     "index.js",
     "promise.js"
   ],
-  "version": "1.0.0",
-  "description": "return an md5sum of a given file",
+  "version": "1.0.1",
+  "description": "return an md5sum of a given file opened with graceful-fs",
   "keywords": [
     "md5",
     "md5sum",
