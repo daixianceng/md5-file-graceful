@@ -1,18 +1,18 @@
-# md5-file [![Build Status](https://travis-ci.org/roryrjb/md5-file.svg?branch=master)](https://travis-ci.org/roryrjb/md5-file) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+# md5-file-graceful
 
 Get the MD5-sum of a given file, with low memory usage, even on huge files.
 
 ## Installation
 
 ```sh
-npm install --save md5-file
+npm install --save md5-file-graceful
 ```
 
 ## Usage
 
 ### As a module
 ```js
-const md5File = require('md5-file')
+const md5File = require('md5-file-graceful')
 
 /* Async usage */
 md5File('LICENSE.md', (err, hash) => {
@@ -28,16 +28,16 @@ console.log(`The MD5 sum of LICENSE.md is: ${hash}`)
 
 ### As a command line tool
 ```
-$ md5-file LICENSE.md
+$ md5-file-graceful LICENSE.md
 ```
 
 ## Promise support
 
-If you require `md5-file/promise` you'll receive an alternative API where all
+If you require `md5-file-graceful/promise` you'll receive an alternative API where all
 functions that takes callbacks are replaced by `Promise`-returning functions.
 
 ```js
-const md5File = require('md5-file/promise')
+const md5File = require('md5-file-graceful/promise')
 
 md5File('LICENSE.md').then(hash => {
   console.log(`The MD5 sum of LICENSE.md is: ${hash}`)

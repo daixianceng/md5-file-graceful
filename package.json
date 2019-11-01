@@ -1,29 +1,36 @@
 {
-  "name": "md5-file",
+  "name": "md5-file-graceful",
   "main": "index.js",
-  "repository": "roryrjb/md5-file",
+  "repository": "daixianceng/md5-file-graceful",
   "files": [
     "cli.js",
     "index.js",
     "promise.js"
   ],
-  "version": "4.0.0",
+  "version": "1.0.0",
   "description": "return an md5sum of a given file",
   "keywords": [
     "md5",
     "md5sum",
     "checksum"
   ],
-  "author": {
-    "name": "Rory Bradford",
-    "email": "rory@dysfunctionalprogramming.com"
-  },
+  "authors": [
+    {
+      "name": "Cosmo",
+      "email": "daixianceng@gmail.com"
+    },
+    {
+      "name": "Rory Bradford",
+      "email": "rory@dysfunctionalprogramming.com"
+    }
+  ],
   "license": "MIT",
   "scripts": {
     "test": "standard && mocha"
   },
   "bin": "cli.js",
   "devDependencies": {
+    "graceful-fs": "^4.2.3",
     "mocha": "^5.0.5",
     "standard": "^11.0.1"
   },
